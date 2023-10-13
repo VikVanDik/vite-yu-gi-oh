@@ -1,34 +1,27 @@
 <script>
-
-
 export default {
-  name : "Card",
-
-  components : {
-
-  },
-
-  data () {
-    return {
-      
-    }
-  }
+  name : 'Card'
 }
 </script>
 
 <template>
   
-  <div class="card">
+  <div class="cardYu col-2 d-flex flex-column align-items-center">
     <img src="https://images.ygoprodeck.com/images/cards/34541863.jpg" alt="">
-    <p>aaaaa</p>
+    <div>Archetipo</div>
+    <div>Nome</div>
   </div>
   
 </template>
 
 <style lang="scss" scoped>
-  .card {
-    width: 200px;
-    height: 20px;
-    background-color: red;
+  .cardYu {
+    margin: 10px;
+    height: 300px;
+    background-color: #D48F38;
+    img {
+      width: 150px;
+    }
   }
+
 </style>

@@ -1,9 +1,13 @@
 <script>
+import Card from './partials/Card.vue'
 
-import Card from './partials/Card.vue';
 
 export default {
   name: 'CardContainer',
+
+  components : {
+    Card
+  },
 
   data () {
     return {
@@ -16,10 +20,16 @@ export default {
 
 <template>
 
-  <div class="container">
+  <div class="container cardContainer row justify-content-center ">
     <Card />
     <Card />
     <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    
   </div>
 
 </template>
@@ -27,9 +37,10 @@ export default {
 
 <style scoped>
 
-.container {
+.cardContainer {
   background-color: white;
-  height: 100px;
+  
+  
 }
 
 </style>

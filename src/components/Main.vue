@@ -2,6 +2,7 @@
 import { store } from '../data/store'
 import CardContainer from './CardContainer.vue';
 
+
 export default {
   name : "Main",
 
@@ -26,7 +27,7 @@ export default {
       <option value="2">Two</option>
       <option value="3">Three</option>
     </select>
-
+    
     <CardContainer />
 
   </div>

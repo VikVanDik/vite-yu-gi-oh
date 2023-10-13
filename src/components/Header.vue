@@ -10,7 +10,7 @@ export default {
 <template>
   
   <header class="d-flex align-items-center ">
-    <img src="/public/YuGiOh.webp" alt="">
+    <img src="/YuGiOh.webp" alt="">
     <div>Yu-Gi-Oh API</div>
   </header>
   
@@ -22,7 +22,7 @@ export default {
 
 header {
   height: 50px;
-  background-color: red;
+  background-color: white;
   img {
     width: 100px;
   }
