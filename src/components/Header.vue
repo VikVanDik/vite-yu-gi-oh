@@ -2,28 +2,33 @@
 
 
 export default {
-  name : "Header",
+  name : "Header"
 
-  components : {
-
-  },
-
-  data () {
-    return {
-      
-    }
-  }
 }
 </script>
 
 <template>
   
-  <div>
-    AAAAA
-  </div>
+  <header class="d-flex align-items-center ">
+    <img src="/public/YuGiOh.webp" alt="">
+    <div>Yu-Gi-Oh API</div>
+  </header>
   
 </template>
 
-<style>
+<style lang="scss" scoped>
 
+
+
+header {
+  height: 50px;
+  background-color: red;
+  img {
+    width: 100px;
+  }
+  div {
+    font-size: 35px;
+  }
+
+}
 </style>
