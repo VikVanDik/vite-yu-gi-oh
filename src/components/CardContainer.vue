@@ -1,5 +1,6 @@
 <script>
 import Card from './partials/Card.vue'
+import { store } from '../data/store'
 
 
 export default {
@@ -11,7 +12,8 @@ export default {
 
   data () {
     return {
-      Card
+      Card,
+      store,
     }
   }
 }
@@ -20,15 +22,16 @@ export default {
 
 <template>
 
-  <div class="container cardContainer row justify-content-center ">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+  <div class="container">
+    <div class=" cardContainer row justify-content-center ">
+      <Card 
+      v-for = "card in store.cardsList" 
+      :key = "card.id" 
+      :nameStr="card.name"
+      :archetypeStr="card.archetype"
+      :imgStr="card.card_images[0].image_url"/>
+      
+    </div>
     
   </div>
 
@@ -39,8 +42,6 @@ export default {
 
 .cardContainer {
   background-color: white;
-  
-  
 }
 
 </style>
